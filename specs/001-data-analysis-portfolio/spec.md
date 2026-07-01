@@ -16,11 +16,14 @@ Create a premium, responsive, and fully functional portfolio website to display 
   - *Dark Mode (Cold/Futuristic)*: Deep space blue-black background (`#070A13`), glowing cyan/teal details, and glowing warm orange/amber accents.
 - **FR-4: Interactive Project Drill-Down (Modal)**: Clicking a project card triggers a smooth overlay modal displaying comprehensive project insights, key data metrics, structured code snippets, and an interactive SVG chart demonstrating the user's data visualization skills.
 - **FR-5: Contact Form & Socials**: Contains a functional contact section with input validation (name, email, message) and custom micro-animations for inputs and submission.
+- **FR-PERF-01: 60 FPS Visualizations**: Interactive visual elements and canvas particles must maintain 60 FPS rendering on mobile viewports.
 
 ## Success Criteria
 - **SC-1: High Performance**: FCP (First Contentful Paint) under 1.2s on desktop, and entrance animations run at a stable 60fps on modern mobile and desktop devices.
 - **SC-2: Accessible Design**: Contrast ratios for all text in both light and dark modes exceed 4.5:1 (WCAG AA standard). Interactive elements feature distinct focus outlines.
 - **SC-3: Responsive Layout**: The portfolio renders perfectly across mobile (>=375px), tablet (>=768px), and desktop (>=1024px) screens.
+- **SC-PERF-01: Input Latency**: Chart SVG/Canvas updates and filter button transitions must execute with < 50ms UI input latency.
+- **SC-PERF-02: Payload Size**: Total initial bundled JavaScript/CSS payload for interactive visualizations must remain under 150KB gzipped.
 
 ## User Scenarios
 ### Scenario 1: Exploring Projects
